@@ -40,13 +40,13 @@ let userInfo = {
 function Account(props: any) {
     let formType = props.formType;
     let [passHidden, togglePassDisplay] = useState(true);
-    let [fnameError, setFnameError] = useState(<></>);
-    let [lnameError, setLnameError] = useState(<></>);
-    let [unameError, setUnameError] = useState(<></>);
-    let [emailError, setEmailError] = useState(<></>);
-    let [rqmDisplay, setRqmDisplay] = useState(<></>);
-    let [confPassError, setConfPassError] = useState(<></>);
-    let [authError, setAuthError] = useState(<></>)
+    let [fnameError, setFnameError] = useState<JSX.Element>(<></>);
+    let [lnameError, setLnameError] = useState<JSX.Element>(<></>);
+    let [unameError, setUnameError] = useState<JSX.Element>(<></>);
+    let [emailError, setEmailError] = useState<JSX.Element>(<></>);
+    let [rqmDisplay, setRqmDisplay] = useState<JSX.Element>(<></>);
+    let [confPassError, setConfPassError] = useState<JSX.Element>(<></>);
+    let [authError, setAuthError] = useState<JSX.Element>(<></>)
     const hideErrDisplay = () => {
         setFnameError(<></>);
         setLnameError(<></>);
